@@ -17,8 +17,8 @@ app.use('/', index)
 app.use('/another', another)
 
 const userActivityWebhook = twitterWebhooks.userActivity({
-  serverUrl: 'https://yourdomain.com',
-  route: '/', //default : '/'
+  serverUrl: 'https://powerful-ridge-98017.herokuapp.com',
+  route: '/twitter', //default : '/'
   consumerKey: process.env.TWITTER_API_KEY,
   consumerSecret: process.env.TWITTER_API_SECRET_KEY,
   accessToken: process.env.TWITTER_ACCESS_TOKEN,
