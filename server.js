@@ -7,14 +7,14 @@ const app = express()
 
 // require routes
 var index = require('./routes/index')
-var users = require('./routes/another')
+var another = require('./routes/another')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // use routes
 app.use('/', index)
-app.use('/users', users)
+app.use('/another', another)
 
 const userActivityWebhook = twitterWebhooks.userActivity({
   serverUrl: 'https://yourdomain.com',
