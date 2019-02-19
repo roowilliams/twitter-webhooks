@@ -28,7 +28,7 @@ const userActivityWebhook = twitterWebhooks.userActivity({
 })
 
 //Register your webhook url - just needed once per URL
-userActivityWebhook.register()
+userActivityWebhook.register().catch(err => console.log)
 
 // Subscribe for a particular user activity
 
